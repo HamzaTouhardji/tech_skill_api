@@ -7,5 +7,9 @@ import com.hamza.tech_skills.model.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long>{
+	
+	public User getUserByEmail (String email);
+	
+	
 
 }
