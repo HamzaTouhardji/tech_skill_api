@@ -22,7 +22,7 @@ import java.util.Map;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@CrossOrigin(origins = "http://localhost:3001")
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("api/user")
 public class UserController {
@@ -58,7 +58,7 @@ public class UserController {
 		User user = userRepository.findById(id)
 				.orElseThrow(() -> new ResourceNotFoundException("Employee not exist with id :" + id));
 		
-		user.setName(userDetails.getName());
+		user.setUsername(userDetails.getUsername());
 		user.setEmail(userDetails.getEmail());
 		
 		User updatedUser = userRepository.save(user);
