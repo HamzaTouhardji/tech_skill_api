@@ -13,8 +13,9 @@ class TechSkillsApplicationTests {
 	@Test
 	void contextLoads() {
 
-		Context context = Context.create("");
-		Value js = context.eval("js", "console.log(toot)");
+		Context context = Context.create("js");
+		Value js = context.eval("js", "console.log('test')");
+
 
 	}
 
