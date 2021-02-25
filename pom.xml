@@ -61,7 +61,21 @@
 		    <artifactId>mysql-connector-java</artifactId>
 		    <version>8.0.22</version>
 		</dependency>
-
+		<dependency>
+		<groupId>org.graalvm.sdk</groupId>
+		<artifactId>graal-sdk</artifactId>
+		<version>20.1.0</version>
+		</dependency>
+		<dependency>
+		<groupId>org.graalvm.truffle</groupId>
+		<artifactId>truffle-api</artifactId>
+		<version>20.1.0</version>
+		</dependency>
+		<dependency>
+		<groupId>org.graalvm.js</groupId>
+		<artifactId>js</artifactId>
+		<version>20.1.0</version>
+		</dependency>
 		
 		    <dependency>
       <groupId>com.h2database</groupId>
